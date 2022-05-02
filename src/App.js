@@ -15,6 +15,7 @@ const App = () => {
 	const [ users, setUsers ] = useState(usersData)
 	const [ currentUser, setCurrentUser ] = useState(initialFormState)
 	const [ editing, setEditing ] = useState(false)
+	localStorage.setItem("users", JSON.stringify(users));
 
 	// CRUD operations
 	const addUser = user => {
