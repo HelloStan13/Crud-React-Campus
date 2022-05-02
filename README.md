@@ -1,8 +1,4 @@
-# React Hooks Tutorial
-
-In this tutorial, we'll make a simple CRUD app that can add, update, or delete users.
-
-### [View the demo](https://taniarascia.github.io/react-hooks/) | [Read the tutorial](https://www.taniarascia.com/crud-app-in-react-with-hooks/)
+# React Crud
 
 ## Cambios por
 
@@ -19,5 +15,10 @@ In this tutorial, we'll make a simple CRUD app that can add, update, or delete u
 
 ### Visual OK
 ![crud campus3](https://user-images.githubusercontent.com/92740455/166268419-faf38861-9b7e-4bcc-b343-1c7ad71209eb.jpg)
+.
+### Video
+
+https://www.loom.com/share/f2443478afab4046bd2ba1205a06d04e
+
 
 
