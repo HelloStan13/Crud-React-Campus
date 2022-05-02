@@ -15,14 +15,15 @@ const App = () => {
 	const [ users, setUsers ] = useState(usersData)
 	const [ currentUser, setCurrentUser ] = useState(initialFormState)
 	const [ editing, setEditing ] = useState(false)
+	//guardado en localStorage
 	localStorage.setItem("users", JSON.stringify(users));
 
-	// CRUD operations
+	// añadir usuario
 	const addUser = user => {
 		user.id = users.length + 1
 		setUsers([ ...users, user ])
 	}
-
+//borrar usuario
 	const deleteUser = id => {
 		setEditing(false)
 
@@ -34,7 +35,7 @@ const App = () => {
 
 		setUsers(users.map(user => (user.id === id ? updatedUser : user)))
 	}
-
+//editar usuario
 	const editRow = user => {
 		setEditing(true)
 
