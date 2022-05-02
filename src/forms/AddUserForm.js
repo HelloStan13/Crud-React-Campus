@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './style.css';
 
 const AddUserForm = props => {
 	const initialFormState = { id: null, name: '', username: '' }
@@ -21,10 +22,10 @@ const AddUserForm = props => {
 			}}
 		>
 			<label>Name</label>
-			<input type="text" name="name" value={user.name} onChange={handleInputChange} />
+			<input type="text" className='input' name="name" value={user.name} onChange={handleInputChange} />
 			<label>Username</label>
-			<input type="text" name="username" value={user.username} onChange={handleInputChange} />
-			<button>Add new user</button>
+			<input type="text" className='input' name="username" value={user.username} onChange={handleInputChange} />
+			<button className='btn btn-primary'>Add new user</button>
 		</form>
 	)
 }
